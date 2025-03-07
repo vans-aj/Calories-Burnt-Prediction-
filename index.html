@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calorie Burnt Prediction System</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="container">
-    <h2>Calorie Burnt Predictor</h2>
-    <input type="number" id="age" placeholder="Age">
-    <input type="number" id="weight" placeholder="Weight (kg)">
-    <input type="number" id="duration" placeholder="Duration (minutes)">
-    <button onclick="predictCalories()">Predict</button>
-    <div class="result" id="result"></div>
-</div>
-<script src="script.js"></script>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Track Your Calories & Transform Your Life</h1>
+        <p>Calculate your daily calorie burn, track your progress, and achieve your fitness goals.</p>
+        <button class="cta-btn">Start Tracking Now</button>
+    </div>
+    <img src="images/virat.jpg" alt="Fitness Tracking" class="hero-img">
+</section>
+
+
+<!-- Calorie Calculator Form -->
+<section class="calculator">
+    <h2>Calculate Your Daily Calorie Burn</h2>
+    <form>
+        <input type="number" placeholder="Enter your age" required>
+        <input type="number" placeholder="Enter your weight (kg)" required>
+        <input type="number" placeholder="Enter your height (cm)" required>
+        <select required>
+            <option value="" disabled selected>Activity Level</option>
+            <option value="sedentary">Sedentary</option>
+            <option value="moderate">Moderate</option>
+            <option value="active">Active</option>
+        </select>
+        <button type="submit" class="calculate-btn">Calculate</button>
+    </form>
+</section>
+
 </body>
 </html>
